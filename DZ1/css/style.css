@@ -1,3 +1,78 @@
-body{
-    background-color: teal;
+/* вторичный текст 757575 */
+/* основной текст #212121 */
+/* цвет ховер #2196F3 */
+/* цвет фона вторичн E5E5E5 свет сер*/
+/* цвет фона первич  */
+/* цвет фона темн 2F303A */
+
+:root{
+    --primary-text-color: #757575;
+    --secondary-text-color: #000000;
+    --accent-color: #2196F3;
+    --color-white: #ffffff;
+    --background-color2: #E5E5E5;
+
 }
+
+body{
+    color: var(--primary-text-color);
+    background-color: var(--color-white);
+}
+
+.logo{
+    color:  var(--secondary-text-color);
+}
+.logoblue{
+    color:var(--accent-color);
+}
+
+.list{
+    list-style: none;
+}
+
+/* site nav */
+.site-nav a{
+    color: var(--secondary-text-color);
+}
+.site-nav a:hover,
+.site-nav a:focus{
+    color: var(--accent-color);
+}
+
+/* header contacts */
+.header-contacts a{
+    color:  var(--secondary-text-color);
+}
+.header-contacts a:hover,
+.header-contacts a:focus {
+    color: var(--accent-color);
+}
+
+.section-title{
+    color: var(--secondary-text-color);
+}
+
+.features .title{
+    color: var(--secondary-text-color);
+}
+
+/* our cowocers */
+.section-coworkers{
+    background-color: var(--background-color2);
+}
+
+/* button */
+
+.button{
+    color: var(--secondary-text-color);
+    background-color: var(--color-white);
+}
+
+.button.primary{
+    color: var(--color-white);
+    background-color: var(--accent-color);
+}
+
+
+
+
