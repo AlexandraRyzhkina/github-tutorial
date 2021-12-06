@@ -11,6 +11,8 @@
     --accent-color: #2196F3;
     --color-white: #ffffff;
     --background-color2: #E5E5E5;
+    --botton-grey-color: #F5F4FA;
+    --botton-text-color: #212121;
 
 }
 
@@ -39,6 +41,10 @@ body{
     color: var(--accent-color);
 }
 
+.site-nav .link.current{
+    color: var(--accent-color)
+}
+
 /* header contacts */
 .header-contacts a{
     color:  var(--secondary-text-color);
@@ -61,18 +67,28 @@ body{
     background-color: var(--background-color2);
 }
 
-/* button */
+.coworkers .title{
+    color: var(--secondary-text-color);
+}
+
+/* button index */
 
 .button{
-    color: var(--secondary-text-color);
-    background-color: var(--color-white);
+    color: var(--botton-text-color);
+    background-color: var(--botton-grey-color);
 }
 
 .button.primary{
     color: var(--color-white);
     background-color: var(--accent-color);
+    
 }
 
+/* Portfolio html */
+
+.example .title {
+    color: var(--secondary-text-color);
+}
 
 
 
