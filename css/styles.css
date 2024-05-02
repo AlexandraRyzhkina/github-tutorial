@@ -1,0 +1,73 @@
+/* 
+цвет заголовков 212121
+цвет текста 757575
+цвет лого 000000
+цвет акцента 2196F3
+цвет белого FFFFFF
+основной фон F5F5F5 
+вторичній фон AFB1B8 */
+
+:root{
+  --primary-text-color: #757575;
+  --title-text-color: #212121;
+  --accent-color: #2196F3;
+  --logo-studio-color: #000000;
+  --primary-bgc: #F5F5F5;
+  --secondary-bgc: #AFB1B8;
+  --hero-color: #ffffff;
+}
+
+.page {
+  color: var(--primary-text-color);
+  background-color: var(--primary-bgc);
+}
+
+/* navigation  */
+.logo-web{
+  color: var(--accent-color);
+}
+
+.logo-studio{
+  color: var(--logo-studio-color);
+}
+
+.list{
+  list-style: none;
+}
+
+.site-nav-link{
+  color: var(--title-text-color);
+}
+
+.site-nav-link.current{
+  color:var(--accent-color);
+}
+.site-auth-link{
+  color: var(--primary-text-color);
+}
+
+.site-nav-link:hover,
+.site-nav-link:focus,
+.site-auth-link:hover,
+.site-auth-link:focus{
+  color: var(--accent-color);
+}
+/* hero */
+.button{
+  color: var(--hero-color);
+  background-color: var(--accent-color);
+ padding: 10px;
+}
+
+
+.button.hero{
+  color: var(--hero-color);
+  background-color: var(--accent-color);
+}
+
+/* section */
+
+.section-title{
+  color: var(--title-text-color);
+}
+
