@@ -1,3 +1,4 @@
+
 /* 
 цвет заголовков 212121
 цвет текста 757575
@@ -5,7 +6,8 @@
 цвет акцента 2196F3
 цвет белого FFFFFF
 основной фон F5F5F5 
-вторичній фон AFB1B8 */
+вторичній фон AFB1B8 
+цвет кнопок без єффекта F5F4FA*/
 
 :root{
   --primary-text-color: #757575;
@@ -15,11 +17,20 @@
   --primary-bgc: #F5F5F5;
   --secondary-bgc: #AFB1B8;
   --hero-color: #ffffff;
+  --button-noeffect-color: #f5f4fa;
 }
 
 .page {
   color: var(--primary-text-color);
   background-color: var(--primary-bgc);
+}
+
+body{
+  font-family: "roboto";
+}
+
+.site-nav .logo-web, .site-nav .logo-studio{
+  font-family: "raleway";
 }
 
 /* navigation  */
@@ -33,6 +44,10 @@
 
 .list{
   list-style: none;
+}
+
+a, .footer a, .link{
+  text-decoration: none;
 }
 
 .site-nav-link{
@@ -52,22 +67,43 @@
 .site-auth-link:focus{
   color: var(--accent-color);
 }
+
+
+
 /* hero */
 .button{
-  color: var(--hero-color);
-  background-color: var(--accent-color);
+  font-family: "roboto";
+  font-weight: 500;
+  color: var(--title-text-color);
+  background-color: var(--button-noeffect-color);
  padding: 10px;
+}
+.button:hover, .button:focus{
+  background-color: var(--accent-color);
+  color: var(--hero-color);
 }
 
 
 .button.hero{
   color: var(--hero-color);
   background-color: var(--accent-color);
+  font-weight: 700;
 }
 
 /* section */
 
 .section-title{
+  font-family: "roboto";
+  font-weight: 700;
   color: var(--title-text-color);
 }
 
+.section-title.command{
+  font-weight: 500;
+}
+
+/* footer */
+
+.footer-list-contact.list{
+  color:var(--hero-color);
+}

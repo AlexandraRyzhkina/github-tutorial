@@ -5,9 +5,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
   </head>
 
-  <body>
+  <body class="page">
     <!--шапка сайта!>-->
     <header>
       <nav>
@@ -40,96 +43,102 @@
         </li>
       </ul>
     </header>
+    <!-- buttons -->
     <main>
-      <section>
+      <section class="section">
         <ul>
-          <li><button type="button" class="button">Усі</button></li>
-          <li><button type="button" class="button">Веб-сайти</button></li>
-          <li><button type="button" class="button">Додатки</button></li>
-          <li><button type="button" class="button">Дизайн</button></li>
-          <li><button type="button" class="button">Маркетинг</button></li>
+          <li class="portfolio-list-button list"><button type="button" class="button">Усі</button></li>
+          <li class="portfolio-list-button list"><button type="button" class="button">Веб-сайти</button></li>
+          <li class="portfolio-list-button list"><button type="button" class="button">Додатки</button></li>
+          <li class="portfolio-list-button list"><button type="button" class="button">Дизайн</button></li>
+          <li class="portfolio-list-button list"><button type="button" class="button">Маркетинг</button></li>
         </ul>
+</section>
 
+<!-- works -->
+<section class="section">
         <ul>
-          <li>
+          <li class="section-list-name list">
             <img
               src="./images/portfolio/jpeg/img.jpg"
               alt="технохряк"
               width="370"
             />
-            <h3>Технокряк</h3>
+            <h3 class="section-title">Технокряк</h3>
             <p>Веб-сайт</p>
           </li>
-          <li>
+          <li class="section-list-name list">
             <img
               src="./images/portfolio/jpeg/img2.jpg"
               alt="постер"
               width="370"
             />
-            <h3>Постер New Orlean vs Golden Star</h3>
+            <h3 class="section-title">Постер New Orlean vs Golden Star</h3>
             <p>Дизайн</p>
           </li>
-          <li>
+          <li class="section-list-name list">
             <img
               src="./images/portfolio/jpeg/img3.jpg"
               alt="ресторан"
               width="370"
             />
-            <h3>Ресторан Seafood</h3>
+            <h3 class="section-title">Ресторан Seafood</h3>
             <p>Додаток</p>
           </li>
-          <li>
+          <li class="section-list-name list">
             <img
               src="./images/portfolio/jpeg/img4.jpg"
               alt="прайм"
               width="370"
             />
-            <h3>Проєкт Prime</h3>
+            <h3 class="section-title">Проєкт Prime</h3>
             <p>Маркетинг</p>
           </li>
-          <li>
+
+          <li class="section-list-name list">
             <img
               src="./images/portfolio/jpeg/img5.jpg"
               alt="проект ящики"
               width="370"
             />
-            <h3>Проєкт Boxes</h3>
+            <h3 class="section-title">Проєкт Boxes</h3>
             <p>Додаток</p>
           </li>
-          <li>
+
+          <li class="section-list-name list">
             <img
               src="./images/portfolio/jpeg/img6.jpg"
               alt="вдохновение"
               width="370"
             />
-            <h3>Inspiration has no Borders</h3>
+            <h3 class="section-title"> Inspiration has no Borders</h3>
             <p>Веб-сайт</p>
           </li>
-          <li>
+          <li class="section-list-name list">
             <img
               src="./images/portfolio/jpeg/img7.jpg"
               alt="видання"
               width="370"
             />
-            <h3>Видання Limited Edition</h3>
+            <h3 class="section-title">Видання Limited Edition</h3>
             <p>Дизайн</p>
           </li>
-          <li>
+          <li class="section-list-name list">
             <img
               src="./images/portfolio/jpeg/img8.jpg"
               alt="проект лаб"
               width="370"
             />
-            <h3>Проєкт LAB</h3>
+            <h3 class="section-title">Проєкт LAB</h3>
             <p>Маркетинг</p>
           </li>
-          <li>
+          <li class="section-list-name list"> 
             <img
               src="./images/portfolio/jpeg/img9.jpg"
               alt="бизнес"
               width="370"
             />
-            <h3>Growing Business</h3>
+            <h3 class="section-title">Growing Business</h3>
             <p>Додаток</p>
           </li>
         </ul>
@@ -137,22 +146,25 @@
     </main>
     <!--футер-->
     <footer>
-      <address>
-        <ul>
-          <li>
-            <a href="./index.html">Web Studio</a>
-          </li>
-          <li>
-            <a href="https://maps.app.goo.gl/FqzPcrWA2hVZoidx9" target="_blank"
-              >м. Київ, пр-т Лесі Українки, 26
-            </a>
-          </li>
-          <li>
-            <a href="mailto:info@devstudio.com">info@devstudio.com</a>
-          </li>
-          <li><a href="tel:+380961111111">+38 096 111 11 11</a></li>
-        </ul>
-      </address>
-    </footer>
+        <address>
+          <ul class="footer">
+            <li class="footer-list-contact list">
+                <a href="./index.html">
+                    <span class="logo-web">Web</span>
+                    <span class="logo-studio">Studio</span></a
+                  >
+            </li>
+            <li class="footer-list-contact list">
+              <a href="https://maps.app.goo.gl/FqzPcrWA2hVZoidx9" target="_blank"
+                >м. Київ, пр-т Лесі Українки, 26
+              </a>
+            </li>
+            <li class="footer-list-contact list">
+              <a href="mailto:info@devstudio.com">info@devstudio.com</a>
+            </li>
+            <li class="footer-list-contact list"><a href="tel:+380961111111">+38 096 111 11 11</a></li>
+          </ul>
+        </address>
+      </footer>
   </body>
 </html>
