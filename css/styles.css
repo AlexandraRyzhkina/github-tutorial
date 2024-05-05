@@ -29,21 +29,27 @@ body{
   font-family: "roboto";
 }
 
+.list{
+  list-style: none;
+}
+/* navigation  */
+.nav, .site-auth{
+  font-weight: 500;
+font-size: 14px;
+line-height: 1,172;
+}
+
 .site-nav .logo-web, .site-nav .logo-studio{
   font-family: "raleway";
 }
 
-/* navigation  */
+
 .logo-web{
   color: var(--accent-color);
 }
 
 .logo-studio{
   color: var(--logo-studio-color);
-}
-
-.list{
-  list-style: none;
 }
 
 a, .footer a, .link{
@@ -67,7 +73,6 @@ a, .footer a, .link{
 .site-auth-link:focus{
   color: var(--accent-color);
 }
-
 
 
 /* hero */
@@ -95,11 +100,76 @@ a, .footer a, .link{
 .section-title{
   font-family: "roboto";
   font-weight: 700;
-  color: var(--title-text-color);
 }
 
-.section-title.command{
+.section-pluses-title{
+  color: var(--title-text-color);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1,172;
+  letter-spacing: 0.03em;
+  text-align: left;
+}
+
+.section-pluses-text{
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1,714;
+  letter-spacing: 0.03em;
+  text-align: left;
+}
+
+.section-wedo{
+  color: var(--title-text-color);
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1,172;
+  letter-spacing: 0.03em;
+  text-align: center;
+}
+.section-command{
+  color: var(--title-text-color);
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1,172;
+  letter-spacing: 0.03em;
+  text-align: center;
+}
+
+.section-command-title{
+  color: var(--title-text-color);
+  font-size: 16px;
   font-weight: 500;
+  line-height: 1,172;
+  letter-spacing: 0.03em;
+  text-align: center;
+}
+
+.section-command-text{
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1,172;
+  letter-spacing: 0.03em;
+  text-align: center;
+}
+
+/* PORTFOLIO */
+
+.section-works-title{
+  color: var(--title-text-color);
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  text-align: left;
+}
+
+.section-works-text{
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1,875;
+  letter-spacing: 0.03em;
+  text-align: left;
 }
 
 /* footer */
