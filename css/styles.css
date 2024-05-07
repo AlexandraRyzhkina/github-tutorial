@@ -14,15 +14,13 @@
   --title-text-color: #212121;
   --accent-color: #2196F3;
   --logo-studio-color: #000000;
-  --primary-bgc: #F5F5F5;
-  --secondary-bgc: #AFB1B8;
   --hero-color: #ffffff;
   --button-noeffect-color: #f5f4fa;
 }
 
 .page {
   color: var(--primary-text-color);
-  background-color: var(--primary-bgc);
+  background-color: var(--hero-color);
 }
 
 body{
@@ -63,6 +61,7 @@ a, .footer a, .link{
 .site-nav-link.current{
   color:var(--accent-color);
 }
+
 .site-auth-link{
   color: var(--primary-text-color);
 }
@@ -74,20 +73,30 @@ a, .footer a, .link{
   color: var(--accent-color);
 }
 
-
 /* hero */
+
+.hero-title{
+  color:var(--hero-color);
+  background-color: #2F303A;
+  font-size: 44px;
+  font-weight: 900;
+  line-height: 1,364;
+  letter-spacing: 0.06em;
+  text-align: center;
+}
+
 .button{
   font-family: "roboto";
   font-weight: 500;
   color: var(--title-text-color);
   background-color: var(--button-noeffect-color);
- padding: 10px;
+  padding: 10px;
 }
+
 .button:hover, .button:focus{
   background-color: var(--accent-color);
   color: var(--hero-color);
 }
-
 
 .button.hero{
   color: var(--hero-color);
@@ -97,14 +106,12 @@ a, .footer a, .link{
 
 /* section */
 
-.section-title{
-  font-family: "roboto";
+.title{
   font-weight: 700;
+  color: var(--title-text-color);
 }
 
-.section-pluses-title{
-  color: var(--title-text-color);
-  font-weight: 700;
+.section-pluses.title{
   font-size: 14px;
   line-height: 1,172;
   letter-spacing: 0.03em;
@@ -136,7 +143,7 @@ a, .footer a, .link{
   text-align: center;
 }
 
-.section-command-title{
+.section-command-aftertitle{
   color: var(--title-text-color);
   font-size: 16px;
   font-weight: 500;
@@ -155,10 +162,8 @@ a, .footer a, .link{
 
 /* PORTFOLIO */
 
-.section-works-title{
-  color: var(--title-text-color);
+.section-works.title{
   font-size: 18px;
-  font-weight: 700;
   line-height: 2;
   letter-spacing: 0.06em;
   text-align: left;
