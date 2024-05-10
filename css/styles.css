@@ -19,6 +19,7 @@
   --button-effect-color: #ffffff;
   --section-bgc: #f5f4fa;
   --footer-bg-color: #2f303a;
+  --card-set-gap-portfolio: 30px;
 }
 
 html{
@@ -38,10 +39,37 @@ body {
   font-weight: 400;
   font-size: 14px;
 }
+h1,h2,h3,h4,p{
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.title{
+  margin-bottom: 50px;
+}
+
+.aftertitle{
+  margin-bottom: 10px;
+}
+
+.title, .aftertitle{
+  font-weight: 700;
+  color: var(--title-text-color);
+}
 
 .list {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
+
+.container{
+  margin-left: auto;
+  margin-right: auto;
+  width: 1200px;
+  padding: 0 15px;
+}
+
 /* navigation  */
 .nav,
 .site-auth {
@@ -97,6 +125,7 @@ body {
 
 .section.hero{
   background-color: var(--footer-bg-color);
+  text-align: center;
 }
 
 .hero-title {
@@ -105,7 +134,9 @@ body {
   font-weight: 900;
   line-height: 1.364;
   letter-spacing: 0.06em;
-  text-align: center;
+
+  margin-top: 0;
+  margin-bottom: 30px;
 }
 
 .button {
@@ -120,6 +151,9 @@ body {
   display: inline-block;
   padding: 6px 22px 6px 22px;
   margin: 8px;
+  border-radius: 4px;
+  min-width: 73px;
+  text-align: center;
 }
 
 .button:hover,
@@ -143,11 +177,15 @@ body {
   background-color: var(--accent-color);
 }
 
-/* section */
+/* buttons portfolio */
 
-.title {
-  font-weight: 700;
-  color: var(--title-text-color);
+.portfolio-list-button{
+
+}
+
+/* section */
+.section{
+padding-bottom: 94px;
 }
 
 .section-pluses.title {
@@ -170,6 +208,7 @@ body {
 
 .section.command {
   background-color: var(--section-bgc);
+  padding-top: 94px;
 }
 
 .section-command {
@@ -179,7 +218,7 @@ body {
   text-align: center;
 }
 
-.section-command-aftertitle {
+.section-command.aftertitle {
   color: var(--title-text-color);
   font-size: 16px;
   font-weight: 500;
@@ -211,9 +250,24 @@ body {
   text-align: left;
 }
 
+.section-works-list{
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: calc( -1 * var(--card-set-gap-portfolio));
+  margin-bottom: calc( -1 * var(--card-set-gap-portfolio));
+}
+
+.section-works-item{
+  flex-basis: calc( 100% / 3 - var(--card-set-gap-portfolio));
+  margin-left: var(--card-set-gap-portfolio);
+  margin-bottom: var(--card-set-gap-portfolio);
+}
+
 /* footer */
 .footer {
   background-color: var(--footer-bg-color);
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 .address {
   font-style: normal;
